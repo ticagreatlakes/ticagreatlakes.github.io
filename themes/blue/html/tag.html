@@ -8,7 +8,7 @@
     <ul>
     {% for post in posts %}
         <li>
-            <a href="{{post.uri}}">{{post.title}}</a>
+            {{post.date|date:"MMM, yyyy dd"}}{% if post.end %}-{{post.end}}{% endif %} - <a href="{{post.uri}}">{{post.title}}</a>
         </li>
     {% endfor %}
     </ul>
