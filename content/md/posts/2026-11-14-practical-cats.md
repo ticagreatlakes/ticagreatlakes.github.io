@@ -13,14 +13,16 @@ Show Hall:
 * 300 Checkerboard Drive
 * Gray Summit , Missouri , 63039
 * United States
- View show venue location in Google Maps
+
 Judges:
+
 Saturday
-    Vicki Jo Harrison(AB), Carlos Lopez(AB), Debbie Lopeman(AB), Toni Jones(AB), Brenda Russo(AB), Johary Gomez(AB), Mimi Fu(SP)
-    Congress: Johary Gomez(Calaveras)
+*  Vicki Jo Harrison(AB), Carlos Lopez(AB), Debbie Lopeman(AB), Toni Jones(AB), Brenda Russo(AB), Johary Gomez(AB), Mimi Fu(SP)
+* Congress: Johary Gomez(Calaveras)
+
 Sunday
-    Barbara Ray(AB), Fate Mays(AB), Robert Whyte(AB), Robin Austin(AB), JEAN MARC LAGARDE(AB), Susanna Shon(AB), Steven CORNEILLE(AB)
-    Congress: Steven CORNEILLE(Marigolds)
+* Barbara Ray(AB), Fate Mays(AB), Robert Whyte(AB), Robin Austin(AB), JEAN MARC LAGARDE(AB), Susanna Shon(AB), Steven CORNEILLE(AB)
+* Congress: Steven CORNEILLE(Marigolds)
 
 14 RINGS
 

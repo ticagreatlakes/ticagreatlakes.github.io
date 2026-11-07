@@ -4,6 +4,8 @@
  :layout :post
  :tags  ["Windy City Cats"]}
 
+Windy City Cats - Happy Mew Year!!!
+
 Show Hall:
 * Tinley Park Convention Center
 * 18451 Convention Center Drive
@@ -20,8 +22,6 @@ Saturday
 
 Sunday
 * Barbara Ray(AB), Rene Knapp(AB), TBA - To be Announced(AB), Robin Austin(AB), Laura Cunningham(AB), Clint Knapp(AB), Maria Bunina(AB)
-
-Windy City Cats - Happy Mew Year!!!
 
 3 Days, 20 Show Rings
 
