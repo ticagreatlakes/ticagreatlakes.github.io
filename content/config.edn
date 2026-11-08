@@ -18,7 +18,7 @@
  :sass-src                     []
  :sass-path                    "sass"
  :theme                        "blue"
- :resources                    ["img"]
+ :resources                    ["favicon.png" "img" "CNAME"]
  :keep-files                   [".git"]
  :disqus?                      false
  :disqus-shortname             ""
