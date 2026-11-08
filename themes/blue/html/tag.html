@@ -8,7 +8,11 @@
     <ul>
     {% for post in posts %}
         <li>
-            {{post.date|date:"MMM, yyyy dd"}}{% if post.end %}-{{post.end}}{% endif %} - <a href="{{post.uri}}">{{post.title}}</a>
+            <span {% ifequal post.file-name next-show.file-name %}style="font-weight: bold;"{% endifequal %}>
+            {{post.date|date:"MMM, yyyy dd"}}{% if post.end %}-{{post.end}}{% endif %} -
+            <a href="{{post.uri}}">{{post.title}}</a>
+            {% ifequal post.file-name next-show.file-name %}(upcoming){% endifequal %}
+            </span>
         </li>
     {% endfor %}
     </ul>

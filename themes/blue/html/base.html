@@ -77,9 +77,21 @@
                 <div id="recent">
                     <h3>Shows &amp; News</h3>
                     <ul>
+                        {% if next-show %}
+                        <li>
+                          <span style="font-weight: bold;">
+                          {{next-show.date|date:"MMM, yyyy dd"}}{% if next-show.end %}-{{next-show.end}}{% endif %} (upcoming)<br>
+                          <a href="{{next-show.uri}}">{{next-show.title}}</a>
+                          </span>
+                        </li>
+                        <br>
+                        {% endif %}
                         {% for post in latest-posts %}
                         <li>
-                          {{post.date|date:"MMM, yyyy dd"}}{% if post.end %}-{{post.end}}{% endif %}<br><a href="{{post.uri}}">{{post.title}}</a>
+                          <span {% ifequal post.file-name next-show.file-name %}style="font-weight: bold;"{% endifequal %}>
+                          {{post.date|date:"MMM, yyyy dd"}}{% if post.end %}-{{post.end}}{% endif %}<br>
+                          <a href="{{post.uri}}">{{post.title}}</a>
+                          </span>
                         </li>
                         {% endfor %}
                     </ul>

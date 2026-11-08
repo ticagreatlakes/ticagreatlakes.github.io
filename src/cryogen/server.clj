@@ -10,6 +10,7 @@
     [cryogen-core.compiler :refer [compile-assets-timed]]
     [cryogen-core.config :refer [resolve-config]]
     [cryogen-core.io :refer [path]]
+    [cryogen.core :refer [extra-config]]
     [clojure.string :as string])
   (:import (java.io File)))
 
@@ -17,17 +18,17 @@
 
 (def extra-config-dev
   "Add dev-time configuration overrides here, such as `:hide-future-posts? false`"
-  {})
+  (merge {} extra-config))
 
 (defn init [fast?]
   (load-plugins)
   (compile-assets-timed extra-config-dev)
   (let [ignored-files (-> @resolved-config :ignored-files)]
     (run!
-      #(if fast?
-         (start-watcher-for-changes! % ignored-files compile-assets-timed extra-config-dev)
-         (start-watcher! % ignored-files compile-assets-timed))
-      ["content" "themes"])))
+     #(if fast?
+        (start-watcher-for-changes! % ignored-files compile-assets-timed extra-config-dev)
+        (start-watcher! % ignored-files (fn [] (compile-assets-timed extra-config-dev))))
+     ["content" "themes"])))
 
 (defn wrap-subdirectories
   [handler]
