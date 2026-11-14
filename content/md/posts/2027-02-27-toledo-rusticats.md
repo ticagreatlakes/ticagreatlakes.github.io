@@ -2,7 +2,7 @@
  :end   "28"
  :tica  "https://shows.tica.org/en/component/toes/shows#show3478"
  :layout :post
- :tags  ["PracTICAl Cats"]}
+ :tags  ["Toledo RusTICAts"]}
 
 Toledo RusTICAts - "Mechanics & Mayhem"
 
